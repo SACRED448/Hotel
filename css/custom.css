@@ -1,0 +1,119 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto-Regular.ttf');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto-Italic.ttf');
+	font-style: italic;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto-Bold.ttf');
+	font-weight: 700;
+}
+
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto-Bold.ttf');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'segoescript';
+	src: url('/fonts/segoescript.ttf');
+	font-weight: 400;
+}
+
+:root {
+    --color1: #000;
+    --color2: #fff; /* backround color */
+}
+
+html {
+	height: 100%;
+    scroll-behavior: smooth;
+    scroll-padding: var(--scroll-padding, 15rem);
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+    background-color: var(--color2);
+}
+
+.logo {
+    margin-right: 100px;
+}
+
+.hero {
+    background-image: url('../img/background-fone.jpg');
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.content {
+    /* margin-top: -100px; */
+}
+
+.card {
+    border: none;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+.description {
+    background-color: #f8f9fa; /* Светлый фон */
+    padding: 30px; /* Увеличенные отступы */
+    border-radius: 15px; /* Скругление углов */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень */
+    transition: transform 0.3s; /* Плавный эффект при наведении */
+}
+
+/*.description:hover {
+    transform: translateY(-5px); Подъём блока при наведении 
+}*/
+
+h2 {
+    color: #007bff; /* Цвет заголовка */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Тень для заголовка */
+}
+
+.lead {
+    font-weight: bold; /* Жирный шрифт для выделения */
+}
