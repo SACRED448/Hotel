@@ -4,14 +4,20 @@ document.getElementById('bookingForm').addEventListener('submit', async function
     const formData = new FormData(this); // Получаем данные из формы
 
     try {
-        const response = await fetch('/book', { // Укажите путь к вашему серверному маршруту
+        // Отправляем POST-запрос на сервер
+        const response = await fetch('http://localhost:3000/submit', {
             method: 'POST',
             body: formData,
+            headers: {
+                // Устанавливаем заголовок, если ваш сервер ожидает его
+                // 'Accept': 'application/json', // Если сервер возвращает JSON
+            },
         });
 
+        // Проверяем статус ответа
         if (response.ok) {
             const result = await response.text(); // Или response.json() если сервер возвращает JSON
-            alert('Бронирование успешно: ' + result);
+            alert('Форма отправлена: ' + result);
         } else {
             alert('Ошибка при бронировании: ' + response.statusText);
         }

@@ -640,10 +640,10 @@
 
     <div id="Забронировать" class="container container-form mt-5">
         <h2 class="text-center">Форма бронирования отеля</h2>
-        <form action="/book" method="POST">
+        <form id="bookingForm" action="/submit" method="POST">
             <div class="form-group">
-                <label for="fullName">Полное имя</label>
-                <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Введите ваше полное имя" required>
+                <label for="full_name">Полное имя</label>
+                <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Введите ваше полное имя" required>
             </div>
             
             <div class="form-group">
