@@ -208,7 +208,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- Эко-отель «Удивительное рядом» -->
     <div class="descr-and-cards">
@@ -287,7 +286,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
 
     <!-- Отель «Черёхин парк» -->
@@ -396,7 +394,6 @@
             </div>
             
         </div>
-    </div>
     </div>
 
 
@@ -630,8 +627,55 @@
         </div>
     </div>
 
-        </div>
-    </div>
+
+    <div class="container container-form mt-5">
+        <h2 class="text-center">Форма бронирования отеля</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullName">Полное имя</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Введите ваше полное имя" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Электронная почта</label>
+                <input type="email" class="form-control" id="email" placeholder="Введите вашу электронную почту" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Введите ваш номер телефона" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="checkIn">Дата заезда</label>
+                <input type="date" class="form-control" id="checkIn" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="checkOut">Дата выезда</label>
+                <input type="date" class="form-control" id="checkOut" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="guests">Количество гостей</label>
+                <select class="form-control" id="guests" required>
+                    <option value="" disabled selected>Выберите количество гостей</option>
+                    <option value="1">1 гость</option>
+                    <option value="2">2 гостя</option>
+                    <option value="3">3 гостя</option>
+                    <option value="4">4 гостя</option>
+                    <option value="5">5 гостей</option>
+                    <option value="6">6 гостей</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="specialRequests">Особые пожелания</label>
+                <textarea class="form-control" id="specialRequests" rows="3" placeholder="Введите ваши особые пожелания (если есть)"></textarea>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-block">Отправить</button>
+        </form>
     </div>
 
     <!-- Контент -->

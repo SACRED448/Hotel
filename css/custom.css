@@ -79,10 +79,6 @@ body {
     border-radius: 10px;
 }
 
-.content {
-    /* margin-top: -100px; */
-}
-
 .card {
     border: none;
 }
@@ -116,4 +112,16 @@ h2 {
 
 .lead {
     font-weight: bold; /* Жирный шрифт для выделения */
+}
+
+.form-control {
+    border-radius: 5px; /* Закругленные углы для полей ввода */
+}
+
+.container-form {
+    background-color: #ffffff; /* Белый фон для формы */
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень для формы */
+    padding: 30px; /* Отступы внутри формы */
+    margin-top: 50px; /* Отступ сверху */
 }
