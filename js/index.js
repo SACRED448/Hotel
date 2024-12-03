@@ -2,16 +2,16 @@ document.getElementById('bookingForm').addEventListener('submit', async function
     event.preventDefault(); // Отменяем стандартное поведение формы
 
     const formData = new FormData(this); // Получаем данные из формы
+    const data = Object.fromEntries(formData.entries());
 
     try {
         // Отправляем POST-запрос на сервер
         const response = await fetch('http://localhost:3000/submit', {
             method: 'POST',
-            body: formData,
             headers: {
-                // Устанавливаем заголовок, если ваш сервер ожидает его
-                // 'Accept': 'application/json', // Если сервер возвращает JSON
+                'Content-Type': 'application/json',
             },
+            body: JSON.stringify(data), // Отправляем данные как JSON
         });
 
         // Проверяем статус ответа
