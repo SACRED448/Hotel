@@ -29,7 +29,6 @@ const pool = new Pool({
 // Маршрут для обработки отправки формы
 app.post('/submit', async (req, res) => {
     const { full_name, email, phone, check_in, check_out, guests, special_requests } = req.body;
-    // console.log(req.body);
     try {
         const result = await pool.query(
             'INSERT INTO bookings (full_name, email, phone, check_in, check_out, guests, special_requests) VALUES ($1, $2, $3, $4, $5, $6, $7)',
